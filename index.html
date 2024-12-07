@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">My Portfolio</div>
+        <ul>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Welcome to My Portfolio</h1>
+        <p>Your gateway to my professional journey.</p>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <h2>About Me</h2>
+        <p>I am a passionate developer with expertise in building responsive and interactive web applications. Explore my work and skills!</p>
+    </section>
+
+    <!-- Boxes Section -->
+    <section class="content">
+        <div class="card" onclick="showPopup('projects')">
+            <div class="icon">📁</div>
+            <h3>Projects</h3>
+        </div>
+        <div class="card" onclick="showPopup('certifications')">
+            <div class="icon">📜</div>
+            <h3>Certifications</h3>
+        </div>
+        <div class="card" onclick="showPopup('skills')">
+            <div class="icon">💡</div>
+            <h3>Skills</h3>
+        </div>
+    </section>
+
+    <!-- Pop-up Containers -->
+    <div id="popup-projects" class="popup">
+        <div class="popup-content">
+            <span class="close-btn" onclick="hidePopup('projects')">&times;</span>
+            <h2>Projects</h2>
+            <p>Here are some of my top projects:</p>
+            <ul>
+                <li>Project 1: AI Bug Tracker</li>
+                <li>Project 2: Intelligent Dredging Decisions</li>
+                <li>Project 3: Portfolio Website</li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="popup-certifications" class="popup">
+        <div class="popup-content">
+            <span class="close-btn" onclick="hidePopup('certifications')">&times;</span>
+            <h2>Certifications</h2>
+            <p>Here are some of my certifications:</p>
+            <ul>
+                <li>Data Analytics</li>
+                <li>Azure Fundamentals</li>
+                <li>Generative AI</li>
+                <li>Mongo DB</li>
+                <li>Fundamentals of Web Development</li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="popup-skills" class="popup">
+        <div class="popup-content">
+            <span class="close-btn" onclick="hidePopup('skills')">&times;</span>
+            <h2>Skills</h2>
+            <p>Here are my technical skills:</p>
+            <ul>
+                <li>HTML, CSS, JavaScript</li>
+                <li>C, C++, Python</li>
+                <li>Microsoft Azure</li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+    <footer class="footer">
+        <p>&copy; 2024 My Portfolio</p>
+    </footer>
+</body>
+</html>
